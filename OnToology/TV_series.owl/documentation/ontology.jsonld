@@ -1,0 +1,1370 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded"
+  } ]
+}, {
+  "@id" : "_:genid10",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid15"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid17"
+  } ]
+}, {
+  "@id" : "_:genid17",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid21"
+    }, {
+      "@id" : "_:genid19"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "10"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded"
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#language_filmed_in"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+    }, {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution"
+    }, {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+    }, {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language"
+    }, {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+    }, {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating"
+    }, {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Writer"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If an actor is awarded with best actor is a male"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid37"
+    }, {
+      "@id" : "_:genid35"
+    }, {
+      "@id" : "_:genid33"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid41"
+    }, {
+      "@id" : "_:genid39"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actor"
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male"
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If an actor is awarded with best actress, then is a female"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S2"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid48"
+    }, {
+      "@id" : "_:genid46"
+    }, {
+      "@id" : "_:genid44"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid52"
+    }, {
+      "@id" : "_:genid50"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actress"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#onDatatype" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2002/07/owl#withRestrictions" : [ {
+    "@list" : [ {
+      "@id" : "_:genid9"
+    }, {
+      "@id" : "_:genid7"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male"
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female"
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "If a season has an award then the series that this season belongs has this award"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "S3"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid59"
+    }, {
+      "@id" : "_:genid57"
+    }, {
+      "@id" : "_:genid55"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid61"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_series"
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#season_awarded_with"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#series_awarded_with"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "http://www.w3.org/2001/XMLSchema#maxInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "5"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/2001/XMLSchema#minInclusive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "0"
+  } ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Ontology name:\nTV_series\n\nDescription:\nOntology for television series which instances are based in the comedy-drama television series \"Fleabag\", realized as an exercise for the \"Representació del coneixement\" course in Universitat Oberta de Catalunya.\n\nAuthor: \nNona Vilarrasa Rull"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who plays the part of a character in the series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Amazon_Prime_Video",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Streaming"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Andrew_Scott",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An award is given to a recipient as a token of recognition of excellence in a certain field. The recipient is often a single person or a representative of a group of people,"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Award"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#BBC_Studios",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Television"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An award given to an actor who has delivered an outstanding performance in a leading role in a series (episode or season in general) released that year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Best_Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+  }, {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An award given to an actress who has delivered an outstanding performance in a leading role in a series (episode or season in general) released that year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Best_Actress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Series",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Award given to the best series as a whole. Usually an annual award that is given to a Season realeased the same year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Best_Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Writing",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Awarded to the writer of a screenplay (episode and or season of the series)  adapted from another source (novel or play usually) or  to the writer of an script not based on previously published material, and released that year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Best_Writing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+  }, {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Composer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who writes music,  as a professional occupation, that in this ontology specifically composed the music for the series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Composer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Critic's_choice_television_award",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Dazzler_Media",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Physical_copy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Director",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who is in charge of the series episode and supervises the actors, the staff and key artistical decisions."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the channels used for sharing the series content out among their (possible) viewers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Distribution"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#English",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An episode is a coherent narrative unit within the larger dramatic work, used in this case to describe units of series that are broadcasted separately in order to form one longer series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Harry_Bradbeer"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_season" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season_1"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#was_released" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2016-06-21T20:30:00"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#written_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode_7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Harry_Bradbeer"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_season" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season_2"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Andrew_Scott"
+  }, {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#was_released" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2019-03-04T20:30:00"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#written_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Fleabag",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Golden_Globe_Awards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Harry_Bradbeer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#IMDB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "IMDB online database, among different information regarding television series and other multimedia formats, has also ratings and fan and critical reviews."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "IMDB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Online_databases"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Isobel_Waller_Bridege",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Composer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Journalistic_criticism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Journalistic criticism is the analysis and evaluation of a publication, product or service in general (films, series, books, etc.) that appear regularly in newspapers, magazines and other popular mass-media outlets."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Journalistic_criticism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating"
+  }, {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "System of communication used by people living in a particular country and that is used in the related multimedia content."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Metacritic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Metacritic review aggregator, among different information regarding television series and other multimedia formats, has also ratings and fan and critical reviews."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Metacritic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_aggregator"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Online_databases",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Online databases gather information related to all type of productions, as films, television series, video games, streaming content online etc. In case of series the information normally includes cast, production crew, plot summaries, trivia, ratings, and fan and critical reviews."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Online_databases"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating"
+  }, {
+    "@id" : "_:genid10"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A human being regarded as an individual."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  }, {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Writer"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Physical_copy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A physical copy is a permanent reproduction, or copy, in the form of a physical object, of any media suitable for direct use by a person, of displayed or transmitted data."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Physical_copy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_aggregator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A review aggregator is a system that collects reviews of publications, products or services such as films, series, books, video games, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Reviews_aggregator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating"
+  }, {
+    "@id" : "_:genid16"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Raiting after a critical appraisal of a series, published in newspapers, magazines, online databases or aggregators."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Review_rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Royal_Television_Awards",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Writing"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Collection of episodes in a series broadcasted within a certain time period, usually in one season or year."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season_1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#distributed_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Amazon_Prime_Video"
+  }, {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#BBC_Studios"
+  }, {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Dazzler_Media"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#dubbed_in" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Spanish"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#User_score"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_series" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Fleabag"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#language_filmed_in" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#English"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#season_awarded_with" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Royal_Television_Awards"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#distributed_by" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Amazon_Prime_Video"
+  }, {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#BBC_Studios"
+  }, {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Dazzler_Media"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#dubbed_in" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Spanish"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Text_Critics_Season_2"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_series" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Fleabag"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#language_filmed_in" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#English"
+  } ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#season_awarded_with" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Golden_Globe_Awards"
+  }, {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Critic's_choice_television_award"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Series",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An audiovisual format characterised by its fragmentation, in that it is composed of various episodes of distinct lengths and genres. The episode group encompasses a common story."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Spanish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Streaming",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The multimedia, the series in this case, is delivered and consumed in a very continuous manner from a source, with little or no intermediate storage in network elements. Streaming refers to the delivery method of content, rather than the content itself."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Streaming"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Television",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The multimedia content is broadcasted in a particular area. Traditionally, TV stations made their broadcasts by sending specially-encoded radio signals over the air, called terrestrial television. Individual television stations are usually granted licenses by a government agency to use a particular section of the radio spectrum (a channel) through which they send their signals. Some stations use LPTV broadcast translators to retransmit to further areas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Television"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Text_Critics_Season_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "8.7"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#IMDB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#The_New_Yorker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The New Yorker Magazine publishes reviews of series from different critics ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "The_New_Yorker"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Journalistic_criticism"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#The_Washington_Post",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Washington Pownt newspaper publishes reviews of series from different critics ."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "The_Washington_Post"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Journalistic_criticism"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#User_score",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "@value" : "8.3"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Metacritic"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Voice_actor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person whose job is to provide the voices for fictional characters and dubbed foreign language in the multimedia content."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Voice_Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Writer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A person who writes the stories and dialogues for an episode (or a entire season) of the series."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Writer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The director directed that episode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Director"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "directed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed_by"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The episode was directed by that director/s."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "directed_by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Director"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#distributed_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Channels, platforms or methods in which the season has been distributed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "distributed_by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#dubbed_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Language in which a season has been dubbed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "dubbed_in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_episode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Episodes that are included in a season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has_episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Rating given by a critical review to a tv series season."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has_rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Every review rating has an integer value."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_rating_value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#InverseFunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Seasons included in a series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has_season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Every Person can be female or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_female"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_season",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Season where the episode is included."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_in_season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_series",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Series where the season is included."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is_in_series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Series"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Every Person can be male or not."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is_male"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#language_filmed_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Original language in which the season was filmed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "language_filmed_in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#o",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The person who has received the award."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "person_awarded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Actor or actress that played in that episode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "played"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played_by"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Actor/s that played in that episode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "played_by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#season_awarded_with",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Awards the season has been awarded."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "season_awarded_with"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#series_awarded_with",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Awards that  the series has been awarded."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "series_awarded_with"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#was_released",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date when the episode of the series was released."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "was_released"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#written_by",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The script of an episode was written by that writter/s."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "written_by"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Writer"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#wrote"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#wrote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A writer wrote the script of that episode."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Writer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "wrote"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#x",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#y",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

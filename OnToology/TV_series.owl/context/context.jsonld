@@ -1,0 +1,184 @@
+{
+  "@context" : {
+    "dubbed_in" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#dubbed_in",
+      "@type" : "@id"
+    },
+    "Review_aggregator" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_aggregator"
+    },
+    "series_awarded_with" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#series_awarded_with",
+      "@type" : "@id"
+    },
+    "person_awarded" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Metacritic" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Metacritic"
+    },
+    "Distribution" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "is_male" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Online_databases" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Online_databases"
+    },
+    "played" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played",
+      "@type" : "@id"
+    },
+    "Director" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Director"
+    },
+    "language_filmed_in" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#language_filmed_in",
+      "@type" : "@id"
+    },
+    "played_by" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played_by",
+      "@type" : "@id"
+    },
+    "IMDB" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#IMDB"
+    },
+    "distributed_by" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#distributed_by",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "is_female" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Episode" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode"
+    },
+    "Composer" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Composer"
+    },
+    "directed_by" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed_by",
+      "@type" : "@id"
+    },
+    "was_released" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#was_released",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Best_Series" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Series"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"
+    },
+    "Writer" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Writer"
+    },
+    "Award" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award"
+    },
+    "Actor" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor"
+    },
+    "is_in_series" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_series",
+      "@type" : "@id"
+    },
+    "Journalistic_criticism" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Journalistic_criticism"
+    },
+    "has_rating" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating",
+      "@type" : "@id"
+    },
+    "Best_Writing" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Writing"
+    },
+    "season_awarded_with" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#season_awarded_with",
+      "@type" : "@id"
+    },
+    "wrote" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#wrote",
+      "@type" : "@id"
+    },
+    "Streaming" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Streaming"
+    },
+    "Physical_copy" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Physical_copy"
+    },
+    "directed" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed",
+      "@type" : "@id"
+    },
+    "Best_Actress" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actress"
+    },
+    "Voice_actor" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Voice_actor"
+    },
+    "Review_rating" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating"
+    },
+    "is_in_season" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_season",
+      "@type" : "@id"
+    },
+    "has_rating_value" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Best_Actor" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actor"
+    },
+    "Series" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Series"
+    },
+    "Language" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language"
+    },
+    "Television" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Television"
+    },
+    "has_season" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_season",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "The_New_Yorker" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#The_New_Yorker"
+    },
+    "has_episode" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_episode",
+      "@type" : "@id"
+    },
+    "The_Washington_Post" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#The_Washington_Post"
+    },
+    "Season" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season"
+    },
+    "written_by" : {
+      "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#written_by",
+      "@type" : "@id"
+    }
+  }
+}

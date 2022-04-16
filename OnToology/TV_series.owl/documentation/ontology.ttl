@@ -1,0 +1,728 @@
+@prefix : <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#> .
+
+<http://www.semanticweb.org/nona/ontologies/2022/3/TV_series> rdf:type owl:Ontology ;
+                                                               rdfs:comment """Ontology name:
+TV_series
+
+Description:
+Ontology for television series which instances are based in the comedy-drama television series \"Fleabag\", realized as an exercise for the \"Representació del coneixement\" course in Universitat Oberta de Catalunya.
+
+Author: 
+Nona Vilarrasa Rull"""@en ;
+                                                               owl:versionInfo 1.0 .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed
+:directed rdf:type owl:ObjectProperty ;
+          owl:inverseOf :directed_by ;
+          rdfs:domain :Director ;
+          rdfs:range :Episode ;
+          rdfs:comment "The director directed that episode."@en ;
+          rdfs:label "directed"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#directed_by
+:directed_by rdf:type owl:ObjectProperty ;
+             rdfs:domain :Episode ;
+             rdfs:range :Director ;
+             rdfs:comment "The episode was directed by that director/s."@en ;
+             rdfs:label "directed_by"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#distributed_by
+:distributed_by rdf:type owl:ObjectProperty ;
+                rdfs:domain :Season ;
+                rdfs:range :Distribution ;
+                rdfs:comment "Channels, platforms or methods in which the season has been distributed."@en ;
+                rdfs:label "distributed_by"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#dubbed_in
+:dubbed_in rdf:type owl:ObjectProperty ;
+           rdfs:domain :Season ;
+           rdfs:range :Language ;
+           rdfs:comment "Language in which a season has been dubbed."@en ;
+           rdfs:label "dubbed_in"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_episode
+:has_episode rdf:type owl:ObjectProperty ;
+             owl:inverseOf :is_in_season ;
+             rdf:type owl:InverseFunctionalProperty ;
+             rdfs:domain :Season ;
+             rdfs:range :Episode ;
+             rdfs:comment "Episodes that are included in a season."@en ;
+             rdfs:label "has_episode"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating
+:has_rating rdf:type owl:ObjectProperty ;
+            rdfs:domain :Season ;
+            rdfs:range :Review_rating ;
+            rdfs:comment "Rating given by a critical review to a tv series season."@en ;
+            rdfs:label "has_rating"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_season
+:has_season rdf:type owl:ObjectProperty ;
+            owl:inverseOf :is_in_series ;
+            rdf:type owl:InverseFunctionalProperty ;
+            rdfs:domain :Series ;
+            rdfs:range :Season ;
+            rdfs:comment "Seasons included in a series"@en ;
+            rdfs:label "has_season"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_season
+:is_in_season rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Episode ;
+              rdfs:range :Season ;
+              rdfs:comment "Season where the episode is included."@en ;
+              rdfs:label "is_in_season"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_in_series
+:is_in_series rdf:type owl:ObjectProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Season ;
+              rdfs:range :Series ;
+              rdfs:comment "Series where the season is included."@en ;
+              rdfs:label "is_in_series"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#language_filmed_in
+:language_filmed_in rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Season ;
+                    rdfs:range :Language ;
+                    rdfs:comment "Original language in which the season was filmed."@en ;
+                    rdfs:label "language_filmed_in"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#person_awarded
+:person_awarded rdf:type owl:ObjectProperty ;
+                rdfs:domain :Award ;
+                rdfs:range :Person ;
+                rdfs:comment "The person who has received the award."@en ;
+                rdfs:label "person_awarded"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played
+:played rdf:type owl:ObjectProperty ;
+        owl:inverseOf :played_by ;
+        rdfs:domain :Actor ;
+        rdfs:range :Episode ;
+        rdfs:comment "Actor or actress that played in that episode."@en ;
+        rdfs:label "played"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#played_by
+:played_by rdf:type owl:ObjectProperty ;
+           rdfs:domain :Episode ;
+           rdfs:range :Actor ;
+           rdfs:comment "Actor/s that played in that episode."@en ;
+           rdfs:label "played_by"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#season_awarded_with
+:season_awarded_with rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Season ;
+                     rdfs:range :Award ;
+                     rdfs:comment "Awards the season has been awarded."@en ;
+                     rdfs:label "season_awarded_with"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#series_awarded_with
+:series_awarded_with rdf:type owl:ObjectProperty ;
+                     rdfs:domain :Series ;
+                     rdfs:range :Award ;
+                     rdfs:comment "Awards that  the series has been awarded."@en ;
+                     rdfs:label "series_awarded_with"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#written_by
+:written_by rdf:type owl:ObjectProperty ;
+            owl:inverseOf :wrote ;
+            rdfs:domain :Episode ;
+            rdfs:range :Writer ;
+            rdfs:comment "The script of an episode was written by that writter/s."@en ;
+            rdfs:label "written_by"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#wrote
+:wrote rdf:type owl:ObjectProperty ;
+       rdfs:domain :Writer ;
+       rdfs:range :Episode ;
+       rdfs:comment "A writer wrote the script of that episode."@en ;
+       rdfs:label "wrote"@en .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#has_rating_value
+:has_rating_value rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Review_rating ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:comment "Every review rating has an integer value."@en ;
+                  rdfs:label "has_rating_value" .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female
+:is_female rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "Every Person can be female or not." ;
+           rdfs:label "is_female" .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male
+:is_male rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Person ;
+         rdfs:range xsd:boolean ;
+         rdfs:comment "Every Person can be male or not." ;
+         rdfs:label "is_male" .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#was_released
+:was_released rdf:type owl:DatatypeProperty ,
+                       owl:FunctionalProperty ;
+              rdfs:domain :Episode ;
+              rdfs:range xsd:dateTime ;
+              rdfs:comment "Date when the episode of the series was released."@en ;
+              rdfs:label "was_released" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Actor
+:Actor rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       rdfs:comment "A person who plays the part of a character in the series."@en ;
+       rdfs:label "Actor"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Award
+:Award rdf:type owl:Class ;
+       rdfs:comment "An award is given to a recipient as a token of recognition of excellence in a certain field. The recipient is often a single person or a representative of a group of people," ;
+       rdfs:label "Award" .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actor
+:Best_Actor rdf:type owl:Class ;
+            rdfs:subClassOf :Award ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :person_awarded ;
+                              owl:allValuesFrom :Actor
+                            ] ;
+            rdfs:comment "An award given to an actor who has delivered an outstanding performance in a leading role in a series (episode or season in general) released that year."@en ;
+            rdfs:label "Best_Actor"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Actress
+:Best_Actress rdf:type owl:Class ;
+              rdfs:subClassOf :Award ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :person_awarded ;
+                                owl:allValuesFrom :Actor
+                              ] ;
+              rdfs:comment "An award given to an actress who has delivered an outstanding performance in a leading role in a series (episode or season in general) released that year."@en ;
+              rdfs:label "Best_Actress"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Series
+:Best_Series rdf:type owl:Class ;
+             rdfs:subClassOf :Award ;
+             rdfs:comment "Award given to the best series as a whole. Usually an annual award that is given to a Season realeased the same year."@en ;
+             rdfs:label "Best_Series"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Best_Writing
+:Best_Writing rdf:type owl:Class ;
+              rdfs:subClassOf :Award ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :person_awarded ;
+                                owl:allValuesFrom :Writer
+                              ] ;
+              rdfs:comment "Awarded to the writer of a screenplay (episode and or season of the series)  adapted from another source (novel or play usually) or  to the writer of an script not based on previously published material, and released that year."@en ;
+              rdfs:label "Best_Writing"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Composer
+:Composer rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "A person who writes music,  as a professional occupation, that in this ontology specifically composed the music for the series."@en ;
+          rdfs:label "Composer"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Director
+:Director rdf:type owl:Class ;
+          rdfs:subClassOf :Person ;
+          rdfs:comment "A person who is in charge of the series episode and supervises the actors, the staff and key artistical decisions."@en ;
+          rdfs:label "Director"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Distribution
+:Distribution rdf:type owl:Class ;
+              rdfs:comment "the channels used for sharing the series content out among their (possible) viewers."@en ;
+              rdfs:label "Distribution"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode
+:Episode rdf:type owl:Class ;
+         rdfs:comment "An episode is a coherent narrative unit within the larger dramatic work, used in this case to describe units of series that are broadcasted separately in order to form one longer series."@en ;
+         rdfs:label "Episode"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#IMDB
+:IMDB rdf:type owl:Class ;
+      rdfs:subClassOf :Online_databases ;
+      rdfs:comment "IMDB online database, among different information regarding television series and other multimedia formats, has also ratings and fan and critical reviews."@en ;
+      rdfs:label "IMDB"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Journalistic_criticism
+:Journalistic_criticism rdf:type owl:Class ;
+                        rdfs:subClassOf :Review_rating ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :has_rating_value ;
+                                          owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                               owl:onDatatype xsd:decimal ;
+                                                               owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                      ]
+                                                                                      [ xsd:maxInclusive 5
+                                                                                      ]
+                                                                                    )
+                                                             ]
+                                        ] ;
+                        rdfs:comment "Journalistic criticism is the analysis and evaluation of a publication, product or service in general (films, series, books, etc.) that appear regularly in newspapers, magazines and other popular mass-media outlets."@en ;
+                        rdfs:label "Journalistic_criticism"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Language
+:Language rdf:type owl:Class ;
+          rdfs:comment "System of communication used by people living in a particular country and that is used in the related multimedia content."@en ;
+          rdfs:label "Language"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Metacritic
+:Metacritic rdf:type owl:Class ;
+            rdfs:subClassOf :Review_aggregator ;
+            rdfs:comment "Metacritic review aggregator, among different information regarding television series and other multimedia formats, has also ratings and fan and critical reviews."@en ;
+            rdfs:label "Metacritic"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Online_databases
+:Online_databases rdf:type owl:Class ;
+                  rdfs:subClassOf :Review_rating ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :has_rating_value ;
+                                    owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                         owl:onDatatype xsd:decimal ;
+                                                         owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                ]
+                                                                                [ xsd:maxInclusive 10
+                                                                                ]
+                                                                              )
+                                                       ]
+                                  ] ;
+                  rdfs:comment "Online databases gather information related to all type of productions, as films, television series, video games, streaming content online etc. In case of series the information normally includes cast, production crew, plot summaries, trivia, ratings, and fan and critical reviews."@en ;
+                  rdfs:label "Online_databases"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "A human being regarded as an individual."@en ;
+        rdfs:label "Person"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Physical_copy
+:Physical_copy rdf:type owl:Class ;
+               rdfs:subClassOf :Distribution ;
+               rdfs:comment "A physical copy is a permanent reproduction, or copy, in the form of a physical object, of any media suitable for direct use by a person, of displayed or transmitted data."@en ;
+               rdfs:label "Physical_copy"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_aggregator
+:Review_aggregator rdf:type owl:Class ;
+                   rdfs:subClassOf :Review_rating ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :has_rating_value ;
+                                     owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                          owl:onDatatype xsd:decimal ;
+                                                          owl:withRestrictions ( [ xsd:minInclusive 0
+                                                                                 ]
+                                                                                 [ xsd:maxInclusive 10
+                                                                                 ]
+                                                                               )
+                                                        ]
+                                   ] ;
+                   rdfs:comment "A review aggregator is a system that collects reviews of publications, products or services such as films, series, books, video games, etc."@en ;
+                   rdfs:label "Reviews_aggregator"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Review_rating
+:Review_rating rdf:type owl:Class ;
+               rdfs:comment "Raiting after a critical appraisal of a series, published in newspapers, magazines, online databases or aggregators."@en ;
+               rdfs:label "Review_rating"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season
+:Season rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :language_filmed_in ;
+                          owl:someValuesFrom :Language
+                        ] ;
+        rdfs:comment "Collection of episodes in a series broadcasted within a certain time period, usually in one season or year."@en ;
+        rdfs:label "Season"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Series
+:Series rdf:type owl:Class ;
+        rdfs:comment "An audiovisual format characterised by its fragmentation, in that it is composed of various episodes of distinct lengths and genres. The episode group encompasses a common story."@en ;
+        rdfs:label "Series"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Streaming
+:Streaming rdf:type owl:Class ;
+           rdfs:subClassOf :Distribution ;
+           rdfs:comment "The multimedia, the series in this case, is delivered and consumed in a very continuous manner from a source, with little or no intermediate storage in network elements. Streaming refers to the delivery method of content, rather than the content itself."@en ;
+           rdfs:label "Streaming"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Television
+:Television rdf:type owl:Class ;
+            rdfs:subClassOf :Distribution ;
+            rdfs:comment "The multimedia content is broadcasted in a particular area. Traditionally, TV stations made their broadcasts by sending specially-encoded radio signals over the air, called terrestrial television. Individual television stations are usually granted licenses by a government agency to use a particular section of the radio spectrum (a channel) through which they send their signals. Some stations use LPTV broadcast translators to retransmit to further areas."@en ;
+            rdfs:label "Television"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#The_New_Yorker
+:The_New_Yorker rdf:type owl:Class ;
+                rdfs:subClassOf :Journalistic_criticism ;
+                rdfs:comment "The New Yorker Magazine publishes reviews of series from different critics ."@en ;
+                rdfs:label "The_New_Yorker"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#The_Washington_Post
+:The_Washington_Post rdf:type owl:Class ;
+                     rdfs:subClassOf :Journalistic_criticism ;
+                     rdfs:comment "The Washington Pownt newspaper publishes reviews of series from different critics ."@en ;
+                     rdfs:label "The_Washington_Post"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Voice_actor
+:Voice_actor rdf:type owl:Class ;
+             rdfs:subClassOf :Person ;
+             rdfs:comment "A person whose job is to provide the voices for fictional characters and dubbed foreign language in the multimedia content."@en ;
+             rdfs:label "Voice_Actor"@en .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Writer
+:Writer rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:comment "A person who writes the stories and dialogues for an episode (or a entire season) of the series."@en ;
+        rdfs:label "Writer"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Amazon_Prime_Video
+:Amazon_Prime_Video rdf:type owl:NamedIndividual ,
+                             :Streaming .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Andrew_Scott
+:Andrew_Scott rdf:type owl:NamedIndividual ,
+                       :Actor .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#BBC_Studios
+:BBC_Studios rdf:type owl:NamedIndividual ,
+                      :Television .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Dazzler_Media
+:Dazzler_Media rdf:type owl:NamedIndividual ,
+                        :Physical_copy .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#English
+:English rdf:type owl:NamedIndividual ,
+                  :Language .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode_1
+:Episode_1 rdf:type owl:NamedIndividual ,
+                    :Episode ;
+           :directed_by :Harry_Bradbeer ;
+           :is_in_season :Season_1 ;
+           :played_by :Phoebe_Waller_Bridge ;
+           :written_by :Phoebe_Waller_Bridge ;
+           :was_released "2016-06-21T20:30:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Episode_7
+:Episode_7 rdf:type owl:NamedIndividual ,
+                    :Episode ;
+           :directed_by :Harry_Bradbeer ;
+           :is_in_season :Season_2 ;
+           :played_by :Andrew_Scott ,
+                      :Phoebe_Waller_Bridge ;
+           :written_by :Phoebe_Waller_Bridge ;
+           :was_released "2019-03-04T20:30:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Fleabag
+:Fleabag rdf:type owl:NamedIndividual ,
+                  :Series .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Golden_Globe_Awards
+:Golden_Globe_Awards rdf:type owl:NamedIndividual ,
+                              :Best_Series .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Harry_Bradbeer
+:Harry_Bradbeer rdf:type owl:NamedIndividual ,
+                         :Director .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Isobel_Waller_Bridege
+:Isobel_Waller_Bridege rdf:type owl:NamedIndividual ,
+                                :Composer .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Phoebe_Waller_Bridge
+:Phoebe_Waller_Bridge rdf:type owl:NamedIndividual ,
+                               :Actor ,
+                               :Writer .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Royal_Television_Awards
+:Royal_Television_Awards rdf:type owl:NamedIndividual ,
+                                  :Best_Writing ;
+                         :person_awarded :Phoebe_Waller_Bridge .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season_1
+:Season_1 rdf:type owl:NamedIndividual ,
+                   :Season ;
+          :distributed_by :Amazon_Prime_Video ,
+                          :BBC_Studios ,
+                          :Dazzler_Media ;
+          :dubbed_in :Spanish ;
+          :has_rating :User_score ;
+          :is_in_series :Fleabag ;
+          :language_filmed_in :English ;
+          :season_awarded_with :Royal_Television_Awards .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Season_2
+:Season_2 rdf:type owl:NamedIndividual ,
+                   :Season ;
+          :distributed_by :Amazon_Prime_Video ,
+                          :BBC_Studios ,
+                          :Dazzler_Media ;
+          :dubbed_in :Spanish ;
+          :has_rating :Text_Critics_Season_2 ;
+          :is_in_series :Fleabag ;
+          :language_filmed_in :English ;
+          :season_awarded_with :Golden_Globe_Awards ,
+                               <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Critic's_choice_television_award> .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Spanish
+:Spanish rdf:type owl:NamedIndividual ,
+                  :Language .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Text_Critics_Season_2
+:Text_Critics_Season_2 rdf:type owl:NamedIndividual ,
+                                :IMDB ;
+                       :has_rating_value 8.7 .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#User_score
+:User_score rdf:type owl:NamedIndividual ,
+                     :Metacritic ;
+            :has_rating_value 8.3 .
+
+
+###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Critic's_choice_television_award
+<http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Critic's_choice_television_award> rdf:type owl:NamedIndividual ,
+                                                                                                        :Best_Actress ;
+                                                                                               :person_awarded :Phoebe_Waller_Bridge .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Award
+                :Distribution
+                :Episode
+                :Language
+                :Person
+                :Review_rating
+                :Season
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+:o rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:x rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:y rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "If an actor is awarded with best actor is a male" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Best_Actor ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :person_awarded ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :x
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :is_male ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :is_female ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "If an actor is awarded with best actress, then is a female" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Best_Actress ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :person_awarded ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :x
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Actor ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :x
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :is_female ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :is_male ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :x ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "false"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "If a season has an award then the series that this season belongs has this award" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Season ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :o
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :season_awarded_with ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :x
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :is_in_series ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :y
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :series_awarded_with ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :y ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :x
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
