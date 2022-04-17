@@ -192,7 +192,8 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female
-:is_female rdf:type owl:DatatypeProperty ;
+:is_female rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
            rdfs:domain :Person ;
            rdfs:range xsd:boolean ;
            rdfs:comment "Every Person can be female or not." ;
@@ -200,7 +201,8 @@ rdfs:sameAs rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male
-:is_male rdf:type owl:DatatypeProperty ;
+:is_male rdf:type owl:DatatypeProperty ,
+                  owl:FunctionalProperty ;
          rdfs:domain :Person ;
          rdfs:range xsd:boolean ;
          rdfs:comment "Every Person can be male or not." ;
