@@ -172,6 +172,7 @@
 # 
 # http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person> .
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female> <http://www.w3.org/2000/01/rdf-schema#comment> "Every Person can be female or not." .
@@ -179,6 +180,7 @@
 # 
 # http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person> .
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male> <http://www.w3.org/2000/01/rdf-schema#comment> "Every Person can be male or not." .

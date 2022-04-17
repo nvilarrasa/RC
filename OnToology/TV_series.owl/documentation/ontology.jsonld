@@ -1135,7 +1135,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Every Person can be female or not."
   } ],
@@ -1184,7 +1184,7 @@
   } ]
 }, {
   "@id" : "http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Every Person can be male or not."
   } ],
