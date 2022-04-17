@@ -279,6 +279,7 @@ Nona Vilarrasa Rull</rdfs:comment>
     <!-- http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_female">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>Every Person can be female or not.</rdfs:comment>
@@ -290,6 +291,7 @@ Nona Vilarrasa Rull</rdfs:comment>
     <!-- http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#is_male">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/nona/ontologies/2022/3/TV_series#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment>Every Person can be male or not.</rdfs:comment>
